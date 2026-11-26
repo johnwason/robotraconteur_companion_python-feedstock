@@ -1,5 +1,5 @@
 {% set name = "robotraconteur_companion_python" %}
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/robotraconteur/robotraconteur_companion_python/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: e97f0ceaea14d4eb8da5e3965aaf081c0eaac906b3e63ae8978c65b7a2129384
+  sha256: 21f37f1024faa15993e9ee5249b50e3885581ffd02ff6ecad82ee48a7092af85
 
 build:
   noarch: python
-  number: 2
+  number: 0
   script: "{{ PYTHON }} -m pip install --no-deps --ignore-installed -vv ."
 
 requirements:
